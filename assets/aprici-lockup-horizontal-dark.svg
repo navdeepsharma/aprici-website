@@ -1,0 +1,13 @@
+<svg width="320" height="80" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Aprici Horizontal Lockup - Dark Background -->
+  <!-- Background: use on #0c0a08 or dark surfaces -->
+  <!-- Font: Cormorant, weight 300, fallback serif -->
+  <g transform="translate(10, 8)">
+    <circle cx="26" cy="24" r="24" fill="#d4a853" opacity="0.25"/>
+    <circle cx="50" cy="24" r="24" fill="#d4a853" opacity="0.25"/>
+    <circle cx="38" cy="43" r="24" fill="#d4a853" opacity="0.25"/>
+    <circle cx="38" cy="30" r="7.5" fill="#d4a853" opacity="0.45"/>
+    <circle cx="38" cy="30" r="2.5" fill="#e8c36a" opacity="0.9"/>
+  </g>
+  <text x="100" y="52" font-family="'Cormorant', 'Garamond', 'Times New Roman', serif" font-size="42" font-weight="300" fill="#f5ead6" letter-spacing="2">Aprici</text>
+</svg>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aprici — Brand Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --deep-earth: #0c0a08;
+    --panel: #13110e;
+    --charcoal: #1e1a15;
+    --copper: #a06830;
+    --amber: #b8863a;
+    --gold: #d4a853;
+    --sun: #e8c36a;
+    --cream: #f5ead6;
+    --cream-dim: #c4b69e;
+    --muted: #6b5f4e;
+    --line: #2a231b;
+    --warm-white: #faf4e8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--deep-earth);
+    color: var(--cream);
+    padding: 64px 48px 120px;
+    max-width: 1100px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  h1 {
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--cream);
+    margin: 80px 0 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  h3 {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 40px 0 16px;
+  }
+
+  p, li {
+    font-size: 14px;
+    color: var(--cream-dim);
+    margin-bottom: 12px;
+  }
+
+  ul { padding-left: 0; list-style: none; }
+  ul li::before { content: "— "; color: var(--gold); }
+
+  .subtitle {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 64px;
+  }
+
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    margin: 64px 0;
+    opacity: 0.4;
+  }
+
+  /* Color swatches */
+  .swatch-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 16px 0 32px;
+  }
+
+  .swatch {
+    padding: 32px 16px 16px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .swatch .name { font-weight: 500; }
+  .swatch .hex { opacity: 0.7; font-size: 10px; }
+  .swatch.dark-text { color: rgba(0,0,0,0.6); }
+  .swatch.light-text { color: rgba(255,255,255,0.7); }
+
+  /* Logo display */
+  .logo-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin: 16px 0 32px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .logo-cell {
+    padding: 64px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-cell.dark { background: var(--panel); }
+  .logo-cell.light { background: var(--warm-white); }
+
+  /* Code blocks */
+  .code {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 24px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 12px;
+    color: var(--cream-dim);
+    overflow-x: auto;
+    margin: 16px 0 32px;
+    white-space: pre;
+    line-height: 1.8;
+  }
+
+  .code .comment { color: var(--muted); }
+  .code .prop { color: var(--gold); }
+  .code .val { color: var(--sun); }
+
+  /* Spec table */
+  .spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 32px;
+  }
+
+  .spec-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--cream-dim);
+  }
+
+  .spec-table td:first-child {
+    color: var(--cream);
+    font-weight: 500;
+    width: 200px;
+  }
+
+  @media (max-width: 700px) {
+    body { padding: 40px 24px 80px; }
+    h1 { font-size: 36px; }
+    .swatch-row { grid-template-columns: repeat(3, 1fr); }
+    .logo-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Aprici</h1>
+<div class="subtitle">Brand Guidelines · April 2026</div>
+
+<!-- ABOUT -->
+<h2>About</h2>
+
+<h3>Name</h3>
+<p>Aprici (pronounced a-PREE-chee) is Latin, from the adjective apricus meaning "warmed by the sun, open to the sun, basking in sunlight." The genitive form aprici means "of the sun-warmed."</p>
+
+<h3>Tagline</h3>
+<p><em>Warmed by the sun.</em></p>
+
+<h3>Legal Name</h3>
+<p>Aprici Inc. · Federal Corporation (CBCA) · Ontario, Canada</p>
+
+<h3>Domains</h3>
+<p>aprici.ai (primary) · aprici.ca (secondary)</p>
+
+<div class="divider"></div>
+
+<!-- LOGO -->
+<h2>Logo — The Confluence Mark</h2>
+
+<p>The Aprici mark consists of three overlapping translucent circles converging to a bright center point. It represents warmth gathering and intensifying — where light converges, it grows stronger. The three circles can represent convergence, community, or the three-part meaning of the name (sun, warmth, openness).</p>
+
+<h3>Primary Mark — Dark Background</h3>
+<div class="logo-row">
+  <div class="logo-cell dark">
+    <svg width="120" height="120" viewBox="0 0 200 200">
+      <circle cx="82" cy="78" r="48" fill="#d4a853" opacity="0.25"/>
+      <circle cx="118" cy="78" r="48" fill="#d4a853" opacity="0.25"/>
+      <circle cx="100" cy="108" r="48" fill="#d4a853" opacity="0.25"/>
+      <circle cx="100" cy="86" r="15" fill="#d4a853" opacity="0.45"/>
+      <circle cx="100" cy="86" r="5" fill="#e8c36a" opacity="0.9"/>
+    </svg>
+  </div>
+  <div class="logo-cell light">
+    <svg width="120" height="120" viewBox="0 0 200 200">
+      <circle cx="82" cy="78" r="48" fill="#b8863a" opacity="0.18"/>
+      <circle cx="118" cy="78" r="48" fill="#b8863a" opacity="0.18"/>
+      <circle cx="100" cy="108" r="48" fill="#b8863a" opacity="0.18"/>
+      <circle cx="100" cy="86" r="15" fill="#b8863a" opacity="0.35"/>
+      <circle cx="100" cy="86" r="5" fill="#a06830" opacity="0.8"/>
+    </svg>
+  </div>
+</div>
+
+<h3>Horizontal Lockup</h3>
+<div class="logo-row">
+  <div class="logo-cell dark">
+    <svg width="240" height="64" viewBox="0 0 320 80">
+      <g transform="translate(10, 8)">
+        <circle cx="26" cy="24" r="24" fill="#d4a853" opacity="0.25"/>
+        <circle cx="50" cy="24" r="24" fill="#d4a853" opacity="0.25"/>
+        <circle cx="38" cy="43" r="24" fill="#d4a853" opacity="0.25"/>
+        <circle cx="38" cy="30" r="7.5" fill="#d4a853" opacity="0.45"/>
+        <circle cx="38" cy="30" r="2.5" fill="#e8c36a" opacity="0.9"/>
+      </g>
+      <text x="100" y="52" font-family="'Cormorant', serif" font-size="42" font-weight="300" fill="#f5ead6" letter-spacing="2">Aprici</text>
+    </svg>
+  </div>
+  <div class="logo-cell light">
+    <svg width="240" height="64" viewBox="0 0 320 80">
+      <g transform="translate(10, 8)">
+        <circle cx="26" cy="24" r="24" fill="#b8863a" opacity="0.18"/>
+        <circle cx="50" cy="24" r="24" fill="#b8863a" opacity="0.18"/>
+        <circle cx="38" cy="43" r="24" fill="#b8863a" opacity="0.18"/>
+        <circle cx="38" cy="30" r="7.5" fill="#b8863a" opacity="0.35"/>
+        <circle cx="38" cy="30" r="2.5" fill="#a06830" opacity="0.8"/>
+      </g>
+      <text x="100" y="52" font-family="'Cormorant', serif" font-size="42" font-weight="300" fill="#1e1a15" letter-spacing="2">Aprici</text>
+    </svg>
+  </div>
+</div>
+
+<h3>Stacked Lockup</h3>
+<div class="logo-row">
+  <div class="logo-cell dark" style="padding: 48px 40px;">
+    <svg width="160" height="150" viewBox="0 0 200 180">
+      <g transform="translate(56, 10)">
+        <circle cx="30" cy="28" r="30" fill="#d4a853" opacity="0.25"/>
+        <circle cx="58" cy="28" r="30" fill="#d4a853" opacity="0.25"/>
+        <circle cx="44" cy="52" r="30" fill="#d4a853" opacity="0.25"/>
+        <circle cx="44" cy="35" r="9" fill="#d4a853" opacity="0.45"/>
+        <circle cx="44" cy="35" r="3" fill="#e8c36a" opacity="0.9"/>
+      </g>
+      <text x="100" y="135" font-family="'Cormorant', serif" font-size="36" font-weight="300" fill="#f5ead6" letter-spacing="2" text-anchor="middle">Aprici</text>
+      <text x="100" y="160" font-family="'DM Sans', sans-serif" font-size="9" fill="#6b5f4e" letter-spacing="3" text-anchor="middle">WARMED BY THE SUN</text>
+    </svg>
+  </div>
+  <div class="logo-cell light" style="padding: 48px 40px;">
+    <svg width="160" height="150" viewBox="0 0 200 180">
+      <g transform="translate(56, 10)">
+        <circle cx="30" cy="28" r="30" fill="#b8863a" opacity="0.18"/>
+        <circle cx="58" cy="28" r="30" fill="#b8863a" opacity="0.18"/>
+        <circle cx="44" cy="52" r="30" fill="#b8863a" opacity="0.18"/>
+        <circle cx="44" cy="35" r="9" fill="#b8863a" opacity="0.35"/>
+        <circle cx="44" cy="35" r="3" fill="#a06830" opacity="0.8"/>
+      </g>
+      <text x="100" y="135" font-family="'Cormorant', serif" font-size="36" font-weight="300" fill="#1e1a15" letter-spacing="2" text-anchor="middle">Aprici</text>
+      <text x="100" y="160" font-family="'DM Sans', sans-serif" font-size="9" fill="#8a7e6a" letter-spacing="3" text-anchor="middle">WARMED BY THE SUN</text>
+    </svg>
+  </div>
+</div>
+
+<h3>Outline Mark</h3>
+<div class="logo-row">
+  <div class="logo-cell dark">
+    <svg width="120" height="120" viewBox="0 0 200 200">
+      <circle cx="82" cy="78" r="48" fill="none" stroke="#d4a853" stroke-width="1" opacity="0.35"/>
+      <circle cx="118" cy="78" r="48" fill="none" stroke="#d4a853" stroke-width="1" opacity="0.35"/>
+      <circle cx="100" cy="108" r="48" fill="none" stroke="#d4a853" stroke-width="1" opacity="0.35"/>
+      <circle cx="100" cy="86" r="5" fill="#d4a853"/>
+    </svg>
+  </div>
+  <div class="logo-cell light">
+    <svg width="120" height="120" viewBox="0 0 200 200">
+      <circle cx="82" cy="78" r="48" fill="none" stroke="#1e1a15" stroke-width="1" opacity="0.2"/>
+      <circle cx="118" cy="78" r="48" fill="none" stroke="#1e1a15" stroke-width="1" opacity="0.2"/>
+      <circle cx="100" cy="108" r="48" fill="none" stroke="#1e1a15" stroke-width="1" opacity="0.2"/>
+      <circle cx="100" cy="86" r="5" fill="#1e1a15" opacity="0.6"/>
+    </svg>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- COLORS -->
+<h2>Color Palette</h2>
+
+<p>The palette runs from deep earth tones through copper and gold to warm cream. It evokes late afternoon winter sun — warm light against dark ground.</p>
+
+<div class="swatch-row">
+  <div class="swatch light-text" style="background: #0c0a08;">
+    <span class="name">Deep Earth</span>
+    <span class="hex">#0c0a08</span>
+  </div>
+  <div class="swatch light-text" style="background: #1e1a15;">
+    <span class="name">Charcoal</span>
+    <span class="hex">#1e1a15</span>
+  </div>
+  <div class="swatch light-text" style="background: #a06830;">
+    <span class="name">Copper</span>
+    <span class="hex">#a06830</span>
+  </div>
+  <div class="swatch light-text" style="background: #d4a853;">
+    <span class="name">Gold</span>
+    <span class="hex">#d4a853</span>
+  </div>
+  <div class="swatch dark-text" style="background: #e8c36a;">
+    <span class="name">Sun</span>
+    <span class="hex">#e8c36a</span>
+  </div>
+  <div class="swatch dark-text" style="background: #f5ead6;">
+    <span class="name">Cream</span>
+    <span class="hex">#f5ead6</span>
+  </div>
+</div>
+
+<h3>Secondary / Functional Colors</h3>
+<table class="spec-table">
+  <tr><td>Panel Background</td><td>#13110e</td></tr>
+  <tr><td>Warm Panel</td><td>#1a1613</td></tr>
+  <tr><td>Amber (accent)</td><td>#b8863a</td></tr>
+  <tr><td>Cream Dim (body text on dark)</td><td>#c4b69e</td></tr>
+  <tr><td>Muted (captions, labels)</td><td>#6b5f4e</td></tr>
+  <tr><td>Line / Border</td><td>#2a231b</td></tr>
+  <tr><td>Warm White (light bg)</td><td>#faf4e8</td></tr>
+</table>
+
+<h3>CSS Variables</h3>
+<div class="code"><span class="comment">/* Aprici Brand Colors */</span>
+<span class="prop">--deep-earth:</span> <span class="val">#0c0a08;</span>
+<span class="prop">--panel:</span> <span class="val">#13110e;</span>
+<span class="prop">--panel-warm:</span> <span class="val">#1a1613;</span>
+<span class="prop">--charcoal:</span> <span class="val">#1e1a15;</span>
+<span class="prop">--copper:</span> <span class="val">#a06830;</span>
+<span class="prop">--amber:</span> <span class="val">#b8863a;</span>
+<span class="prop">--gold:</span> <span class="val">#d4a853;</span>
+<span class="prop">--sun:</span> <span class="val">#e8c36a;</span>
+<span class="prop">--cream:</span> <span class="val">#f5ead6;</span>
+<span class="prop">--cream-dim:</span> <span class="val">#c4b69e;</span>
+<span class="prop">--muted:</span> <span class="val">#6b5f4e;</span>
+<span class="prop">--line:</span> <span class="val">#2a231b;</span>
+<span class="prop">--warm-white:</span> <span class="val">#faf4e8;</span></div>
+
+<div class="divider"></div>
+
+<!-- TYPOGRAPHY -->
+<h2>Typography</h2>
+
+<h3>Display / Headings</h3>
+<table class="spec-table">
+  <tr><td>Font</td><td>Cormorant</td></tr>
+  <tr><td>Weights</td><td>300 (Light) for large display, 400 (Regular) for headings</td></tr>
+  <tr><td>Style</td><td>Italic for taglines and accent text</td></tr>
+  <tr><td>Letter spacing</td><td>0.02em – 0.05em depending on size</td></tr>
+  <tr><td>Google Fonts</td><td>fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400</td></tr>
+</table>
+
+<h3>Body / UI</h3>
+<table class="spec-table">
+  <tr><td>Font</td><td>DM Sans</td></tr>
+  <tr><td>Weights</td><td>300 (Light) for body, 400 (Regular) for UI, 500 (Medium) for emphasis</td></tr>
+  <tr><td>Letter spacing</td><td>Normal for body, 0.15em–0.3em for uppercase labels</td></tr>
+  <tr><td>Google Fonts</td><td>fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500</td></tr>
+</table>
+
+<h3>Labels and Eyebrows</h3>
+<table class="spec-table">
+  <tr><td>Font</td><td>DM Sans</td></tr>
+  <tr><td>Size</td><td>9–11px</td></tr>
+  <tr><td>Style</td><td>Uppercase, letter-spacing 0.2em–0.3em</td></tr>
+  <tr><td>Color</td><td>Gold (#d4a853) on dark, Amber (#b8863a) on light</td></tr>
+</table>
+
+<div class="divider"></div>
+
+<!-- LOGO CONSTRUCTION -->
+<h2>Logo Construction</h2>
+
+<p>The Confluence mark is built from exactly three overlapping circles of equal radius, arranged in a triangular formation. The center convergence point is marked by a smaller solid circle (the "warmth core") with a bright center dot (the "sun point").</p>
+
+<h3>Mark Specifications</h3>
+<table class="spec-table">
+  <tr><td>Viewbox</td><td>200 × 200</td></tr>
+  <tr><td>Left circle center</td><td>x: 82, y: 78, radius: 48</td></tr>
+  <tr><td>Right circle center</td><td>x: 118, y: 78, radius: 48</td></tr>
+  <tr><td>Bottom circle center</td><td>x: 100, y: 108, radius: 48</td></tr>
+  <tr><td>Warmth core</td><td>x: 100, y: 86, radius: 15</td></tr>
+  <tr><td>Sun point</td><td>x: 100, y: 86, radius: 5</td></tr>
+</table>
+
+<h3>Dark Background Opacities</h3>
+<table class="spec-table">
+  <tr><td>Three outer circles</td><td>#d4a853 at 25% opacity</td></tr>
+  <tr><td>Warmth core</td><td>#d4a853 at 45% opacity</td></tr>
+  <tr><td>Sun point</td><td>#e8c36a at 90% opacity</td></tr>
+</table>
+
+<h3>Light Background Opacities</h3>
+<table class="spec-table">
+  <tr><td>Three outer circles</td><td>#b8863a at 18% opacity</td></tr>
+  <tr><td>Warmth core</td><td>#b8863a at 35% opacity</td></tr>
+  <tr><td>Sun point</td><td>#a06830 at 80% opacity</td></tr>
+</table>
+
+<h3>Clear Space</h3>
+<p>Maintain a minimum clear space equal to the radius of the sun point (5 units in the 200×200 viewbox, or 2.5% of the mark's width) on all sides. No text, imagery, or other elements should enter this zone.</p>
+
+<h3>Minimum Size</h3>
+<p>The mark should not be reproduced smaller than 24px × 24px on screen or 8mm × 8mm in print. Below this size, use the sun point alone as a favicon or micro-mark.</p>
+
+<div class="divider"></div>
+
+<!-- USAGE NOTES -->
+<h2>Usage Notes</h2>
+
+<h3>Preferred Backgrounds</h3>
+<p>The mark works best on Deep Earth (#0c0a08), Charcoal (#1e1a15), Warm White (#faf4e8), or pure white (#ffffff). Avoid placing the mark on mid-tone backgrounds where the translucent circles lose contrast.</p>
+
+<h3>Wordmark Font</h3>
+<p>The wordmark "Aprici" is always set in Cormorant Light (300 weight) with letter-spacing of 0.05em. Never set the wordmark in bold, all-caps, or a different typeface.</p>
+
+<h3>Do Not</h3>
+<p>Do not rotate the mark. Do not change the circle proportions or positions. Do not apply drop shadows. Do not use the mark on busy photographic backgrounds without a solid color backing. Do not change the gold color to another hue. Do not add outlines to the filled version or fills to the outline version.</p>
+
+<div class="divider"></div>
+
+<!-- ASSETS LIST -->
+<h2>Included Assets</h2>
+
+<table class="spec-table">
+  <tr><td>aprici-mark-dark.svg</td><td>Primary mark for dark backgrounds</td></tr>
+  <tr><td>aprici-mark-light.svg</td><td>Primary mark for light backgrounds</td></tr>
+  <tr><td>aprici-mark-outline.svg</td><td>Outline mark for single-color use</td></tr>
+  <tr><td>aprici-lockup-horizontal-dark.svg</td><td>Mark + wordmark side by side, dark</td></tr>
+  <tr><td>aprici-lockup-horizontal-light.svg</td><td>Mark + wordmark side by side, light</td></tr>
+  <tr><td>aprici-lockup-stacked-dark.svg</td><td>Mark above wordmark + tagline, dark</td></tr>
+  <tr><td>aprici-lockup-stacked-light.svg</td><td>Mark above wordmark + tagline, light</td></tr>
+  <tr><td>aprici-brand-guidelines.html</td><td>This document</td></tr>
+</table>
+
+<div class="divider"></div>
+
+<div style="text-align: center; padding: 40px 0;">
+  <div style="font-family: 'Cormorant', serif; font-weight: 300; font-size: 28px; color: var(--cream); margin-bottom: 12px;">Aprici Inc.</div>
+  <div style="font-size: 11px; color: var(--muted); letter-spacing: 0.2em; text-transform: uppercase;">aprici.ai · Est. 2026 · Ontario, Canada</div>
+</div>
+
+</body>
+</html>
